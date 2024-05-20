@@ -54,7 +54,6 @@ The model is trained using:
 
 The model is evaluated using accuracy, F1-score, and a classification report.
 
-## Usage
 
 ## Running on Kaggle
 
