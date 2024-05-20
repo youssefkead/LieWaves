@@ -19,9 +19,9 @@ The dataset consists of EEG recordings from 27 subjects, each with two sessions:
 1. One session where the subject is telling the truth.
 2. One session where the subject is lying.
 
-The data is organized into two folders within the `truth-lie` directory:
-- `truth-lie/Truth_Sessions/1_BandPass_Filtered`: Contains CSV files for the truth sessions.
-- `truth-lie/Lie_Sessions/1_BandPass_Filtered`: Contains CSV files for the lie sessions.
+The data is organized into two folders:
+- `Truth_Sessions/1_BandPass_Filtered`: Contains CSV files for the truth sessions.
+- `Lie_Sessions/1_BandPass_Filtered`: Contains CSV files for the lie sessions.
 
 Each CSV file contains 5 columns representing EEG channels (`EEG.AF3`, `EEG.T7`, `EEG.Pz`, `EEG.T8`, `EEG.AF4`) and 9600 rows, sampled at 128 Hz.
 
@@ -59,7 +59,7 @@ The model is evaluated using accuracy, F1-score, and a classification report.
 
 1. **Upload the Dataset**:
     - Go to Kaggle and create a new notebook.
-    - Upload the `truth-lie` folder containing your CSV files into the Kaggle notebook environment.
+    - Upload the `Truth_Sessions` and `Lie_Sessions` folders containing your CSV files into the Kaggle notebook environment.
 
 2. **Upload the Notebook**:
     - Upload the `helwan-uni-project-liewaves.ipynb` notebook to the same Kaggle notebook environment.
