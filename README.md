@@ -1,4 +1,4 @@
-# EEG Truth-Lie Classification
+# LieWaves
 
 This repository contains code for classifying EEG data to determine whether a subject is telling the truth or lying. The code uses a Convolutional Neural Network (CNN) model to perform the classification.
 
@@ -9,8 +9,8 @@ This repository contains code for classifying EEG data to determine whether a su
 - [Model](#model)
 - [Training](#training)
 - [Evaluation](#evaluation)
-- [Usage](#usage)
 - [Running on Kaggle](#running-on-kaggle)
+- [Running in Visual Studio Code](#running-in-visual-studio-code)
 - [Requirements](#requirements)
 
 ## Dataset
@@ -20,8 +20,8 @@ The dataset consists of EEG recordings from 27 subjects, each with two sessions:
 2. One session where the subject is lying.
 
 The data is organized into two folders within the `truth-lie` directory:
-- `truth-lie/Truth_Sessions/1_BandPass_Filtered/`: Contains CSV files for the truth sessions.
-- `truth-lie/Lie_Sessions/1_BandPass_Filtered/`: Contains CSV files for the lie sessions.
+- `truth-lie/Truth_Sessions/1_BandPass_Filtered`: Contains CSV files for the truth sessions.
+- `truth-lie/Lie_Sessions/1_BandPass_Filtered`: Contains CSV files for the lie sessions.
 
 Each CSV file contains 5 columns representing EEG channels (`EEG.AF3`, `EEG.T7`, `EEG.Pz`, `EEG.T8`, `EEG.AF4`) and 9600 rows, sampled at 128 Hz.
 
@@ -56,34 +56,38 @@ The model is evaluated using accuracy, F1-score, and a classification report.
 
 ## Usage
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/yourusername/eeg-truth-lie-classification.git
-    cd eeg-truth-lie-classification
-    ```
-
-2. **Install Requirements**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Run the Code**:
-    Ensure the dataset is placed in the `truth-lie` folder as described. Then run the main script:
-    ```bash
-    python main.py
-    ```
-
 ## Running on Kaggle
 
 1. **Upload the Dataset**:
     - Go to Kaggle and create a new notebook.
     - Upload the `truth-lie` folder containing your CSV files into the Kaggle notebook environment.
 
-2. **Copy the Code**:
+2. **Upload the Notebook**:
     - Upload the `helwan-uni-project-liewaves.ipynb` notebook to the same Kaggle notebook environment.
 
 3. **Run the Notebook**:
     - Run all the cells in the notebook to execute the code.
+
+## Running in Visual Studio Code
+
+1. **Download the Notebook**:
+    - Clone or download this repository to your local machine.
+
+2. **Install Jupyter Extension**:
+    - Install the Jupyter extension in Visual Studio Code if you haven't already.
+
+3. **Open the Notebook**:
+    - Open Visual Studio Code and navigate to the location where you saved the repository.
+    - Open the `helwan-uni-project-liewaves.ipynb` notebook.
+
+4. **Install Dependencies**:
+    - Make sure you have installed the required Python packages listed in the `requirements.txt` file. You can install them using:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. **Run the Notebook**:
+    - Run each cell in the notebook to execute the code.
 
 ## Requirements
 
