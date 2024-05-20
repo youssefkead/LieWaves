@@ -20,8 +20,8 @@ The dataset consists of EEG recordings from 27 subjects, each with two sessions:
 2. One session where the subject is lying.
 
 The data is organized into two folders within the `truth-lie` directory:
-- `truth-lie/truth`: Contains CSV files for the truth sessions.
-- `truth-lie/lie`: Contains CSV files for the lie sessions.
+- `truth-lie/Truth_Sessions/1_BandPass_Filtered/`: Contains CSV files for the truth sessions.
+- `truth-lie/Lie_Sessions/1_BandPass_Filtered/`: Contains CSV files for the lie sessions.
 
 Each CSV file contains 5 columns representing EEG channels (`EEG.AF3`, `EEG.T7`, `EEG.Pz`, `EEG.T8`, `EEG.AF4`) and 9600 rows, sampled at 128 Hz.
 
@@ -80,15 +80,9 @@ The model is evaluated using accuracy, F1-score, and a classification report.
     - Upload the `truth-lie` folder containing your CSV files into the Kaggle notebook environment.
 
 2. **Copy the Code**:
-    - Copy the contents of `main.py` from this repository and paste it into a cell in the Kaggle notebook.
+    - Upload the `helwan-uni-project-liewaves.ipynb` notebook to the same Kaggle notebook environment.
 
-3. **Install Dependencies**:
-    - Add a cell at the beginning of the notebook to install the required Python packages:
-    ```python
-    !pip install pandas numpy scikit-learn pywt tensorflow
-    ```
-
-4. **Run the Notebook**:
+3. **Run the Notebook**:
     - Run all the cells in the notebook to execute the code.
 
 ## Requirements
